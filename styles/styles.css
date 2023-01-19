@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "Glacial Indifference";
+  src: url(./../assets/fonts/glacial-indifference/GlacialIndifference-Regular.otf);
+}
+@font-face {
+  font-family: "Glacial Indifference";
+  src: url(./../assets/fonts/glacial-indifference/GlacialIndifference-Bold.otf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Glacial Indifference";
+  src: url(./../assets/fonts/glacial-indifference/GlacialIndifference-Italic.otf);
+  font-style: italic;
+}
+@font-face {
+  font-family: "Now";
+  src: url(./../assets/fonts/glacial-indifference/Now-Black.otf);
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Now";
+  src: url(./../assets/fonts/glacial-indifference/GlacialIndifference-Bold.otf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Now";
+  src: url(./../assets/fonts/Now-Light.otf);
+  font-weight: light;
+}
+@font-face {
+  font-family: "Now";
+  src: url(./../assets/fonts/Now-Medium.otf);
+  font-weight: medium;
+}
+@font-face {
+  font-family: "Now";
+  src: url(./../assets/fonts/Now-Regular.otf);
+}
+@font-face {
+  font-family: "Now";
+  src: url(./../assets/fonts/Now-thin.otf);
+  font-weight: thin;
+}
