@@ -1,2 +1,28 @@
 @use './variables' as *;
 
+html{
+    font-family: $primaryFont;
+    color: $purple;
+    font-size: 125%;
+}
+
+h1{
+    color: white;
+    font-weight: bold;
+    font-size: 4.5rem;
+    margin-top: 0;
+}
+
+h2{
+    color: $orange;
+    font-weight: medium;
+    font-size: 1.8rem;
+}
+
+span{
+    color: $orange;
+}
+
+button{
+    font-weight: medium;
+}

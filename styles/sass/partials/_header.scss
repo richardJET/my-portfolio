@@ -1,0 +1,48 @@
+@use './variables' as *;
+
+header{
+    background-size: cover;
+    
+    background: url(./../assets/header-bg.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    .wrapper{
+        display: flex;
+        align-items: center;
+        height: 100vh;
+    }
+    div{
+        width: 50%;
+    }
+    p{
+        // delete later
+        position: absolute; 
+        left: 25%;
+        top: 60%;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+}
+
+.header-image{
+    position: relative;
+    left: 5%;
+    display: flex;
+    position: relative;
+}
+
+.resume{
+    padding: 20px 35px;
+    background-color: white;
+    position: absolute;
+    left: calc(50% - 178.15px / 2);
+    bottom: 12.5%;
+    color: #1D0C40;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1.5px 14px 28.5px rgba(247, 6, 115, 0.35);
+    &:hover i,
+    &:focus i{
+        color: #625a72;
+    }
+}
