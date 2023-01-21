@@ -4,6 +4,7 @@ html{
     font-family: $primaryFont;
     color: $purple;
     font-size: 125%;
+    line-height: 35px;
 }
 
 h1{
@@ -14,9 +15,22 @@ h1{
 }
 
 h2{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+h3{
     color: $orange;
     font-weight: medium;
     font-size: 1.8rem;
+}
+
+a{
+    color: $fuchsia;
+    text-decoration: none;
+    &:hover{
+        color: $orange
+    }
 }
 
 span{

@@ -290,6 +290,7 @@ html {
   font-family: "Now", sans-serif;
   color: #684DA1;
   font-size: 125%;
+  line-height: 35px;
 }
 
 h1 {
@@ -300,9 +301,22 @@ h1 {
 }
 
 h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+h3 {
   color: #FF9600;
   font-weight: medium;
   font-size: 1.8rem;
+}
+
+a {
+  color: #c74fbf;
+  text-decoration: none;
+}
+a:hover {
+  color: #FF9600;
 }
 
 span {
@@ -331,13 +345,6 @@ header .wrapper {
 header div {
   width: 50%;
 }
-header p {
-  position: absolute;
-  left: 25%;
-  top: 60%;
-  font-weight: bold;
-  font-size: 2rem;
-}
 
 .header-image {
   position: relative;
@@ -362,4 +369,33 @@ header p {
 }
 .resume:hover i, .resume:focus i {
   color: #625a72;
+}
+
+section {
+  margin: 80px 0;
+}
+
+.about .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #3E276C;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-image {
+  width: 48%;
+  padding: 25px 0;
+}
+
+.about-text {
+  width: 50%;
+}
+.about-text p {
+  margin-top: 40px;
 }
