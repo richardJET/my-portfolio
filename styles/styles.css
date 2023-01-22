@@ -243,6 +243,11 @@ button {
   cursor: pointer;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+}
+
 @font-face {
   font-family: "Glacial Indifference";
   src: url(./../assets/fonts/glacial-indifference/GlacialIndifference-Regular.otf);
@@ -290,7 +295,6 @@ html {
   font-family: "Now", sans-serif;
   color: #684DA1;
   font-size: 125%;
-  line-height: 35px;
 }
 
 h1 {
@@ -372,14 +376,13 @@ header div {
 }
 
 section {
-  margin: 80px 0;
+  margin: 100px 0;
 }
 
 .about .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #3E276C;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -390,12 +393,36 @@ section {
 
 .about-image {
   width: 48%;
-  padding: 25px 0;
 }
 
 .about-text {
   width: 50%;
 }
 .about-text p {
-  margin-top: 40px;
+  line-height: 30px;
+}
+
+.skills {
+  text-align: center;
+}
+.skills ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.skills p {
+  font-weight: medium;
+}
+.skills li {
+  padding: 0 50px;
+}
+.skills img {
+  height: 80px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
