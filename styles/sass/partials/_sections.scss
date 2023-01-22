@@ -1,22 +1,39 @@
 @use './variables' as *;
 
 section{
-    margin: 80px 0;
+    margin: 100px 0;
 }
 
 .about .wrapper{
     display: flex;
-    color: #3E276C;
     justify-content: space-between;
     align-items: center;
 }
 .about-image{
     width: 48%;
-    padding: 25px 0;
 }
 .about-text{
     width: 50%;
     p{
-        margin-top: 40px;
+        line-height: 30px;
     }
 }
+
+.skills{
+    text-align: center;
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    p{
+        font-weight: medium;
+    }
+    li{
+        padding: 0 50px;
+    }
+    img{
+        height: 80px;
+        object-fit: contain;
+    }
+} 
