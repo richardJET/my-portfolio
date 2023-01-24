@@ -2,7 +2,7 @@
 
 html{
     font-family: $primaryFont;
-    color: $purple;
+    color: $deepPurple;
     font-size: 125%;
 }
 
@@ -16,12 +16,17 @@ h1{
 h2{
     font-size: 3rem;
     font-weight: bold;
+    margin-top: 0;
 }
 
 h3{
-    color: $orange;
     font-weight: medium;
     font-size: 1.8rem;
+}
+
+h4{
+    font-weight: medium;
+    margin: 0;
 }
 
 a{
