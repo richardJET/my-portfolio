@@ -293,7 +293,7 @@ ul {
 }
 html {
   font-family: "Now", sans-serif;
-  color: #684DA1;
+  color: #3E276C;
   font-size: 125%;
 }
 
@@ -307,12 +307,17 @@ h1 {
 h2 {
   font-size: 3rem;
   font-weight: bold;
+  margin-top: 0;
 }
 
 h3 {
-  color: #FF9600;
   font-weight: medium;
   font-size: 1.8rem;
+}
+
+h4 {
+  font-weight: medium;
+  margin: 0;
 }
 
 a {
@@ -347,7 +352,11 @@ header .wrapper {
   height: 100vh;
 }
 header div {
-  width: 50%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+header h3 {
+  color: #FF9600;
 }
 
 .header-image {
@@ -376,7 +385,10 @@ header div {
 }
 
 section {
-  margin: 100px 0;
+  padding: 100px 0;
+}
+section p {
+  line-height: 30px;
 }
 
 .about .wrapper {
@@ -392,14 +404,13 @@ section {
 }
 
 .about-image {
-  width: 48%;
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
 }
 
 .about-text {
-  width: 50%;
-}
-.about-text p {
-  line-height: 30px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
 .skills {
@@ -425,4 +436,101 @@ section {
   height: 80px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.projects {
+  background-color: #f7f4fd;
+}
+.projects .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.projects h2 {
+  text-align: center;
+  margin: 0;
+}
+
+.project {
+  background-color: white;
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 10px;
+  max-width: 1080px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fff;
+  margin-top: 25px;
+}
+
+.project-image {
+  -ms-flex-preferred-size: 53%;
+      flex-basis: 53%;
+  border-radius: 10px;
+  position: relative;
+}
+.project-image img {
+  border-radius: 10px;
+}
+.project-image:hover .overlay, .project-image:focus-within .overlay {
+  opacity: 1;
+}
+
+.project-description {
+  -ms-flex-preferred-size: 44%;
+      flex-basis: 44%;
+}
+.project-description p {
+  color: #776E8A;
+}
+.project-description ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.project-description li {
+  padding: 0 10px;
+}
+
+.guess-the-movie .project-image {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
+.overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  border-radius: 10px;
+}
+.overlay a {
+  margin: 75px;
+  color: lightgray;
+}
+.overlay a:hover, .overlay a:focus {
+  color: #f7f4fd;
 }

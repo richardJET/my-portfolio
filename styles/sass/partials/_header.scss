@@ -12,7 +12,10 @@ header{
         height: 100vh;
     }
     div{
-        width: 50%;
+        flex-basis: 50%;
+    }
+    h3{
+        color: $orange;
     }
 }
 
