@@ -613,8 +613,8 @@ form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-preferred-size: 63%;
-      flex-basis: 63%;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
 }
 form *:focus {
   outline: none;
@@ -651,4 +651,9 @@ input {
   background: none;
   padding: 20px;
   width: 100%;
+}
+
+footer {
+  text-align: center;
+  color: #5c4194;
 }
