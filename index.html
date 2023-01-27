@@ -130,15 +130,34 @@
 				</div>
 			</div>
 		</section>
-		<section>
-			<form action="">
-				<label for="name"></label>
-				<input type="text" id="name" name="name">
-				<label for="email"></label>
-				<input type="text" id="email" name="email">
-				<label for="message"></label>
-				<textarea name="message" id="message" cols="30" rows="10"></textarea>
-			</form>
+		<section class="contact">
+			<div class="wrapper">
+				<div class="socials">
+					<h2>Let's Chat</h2>
+					<p>If you want to chat about projects or anything at all, send me a message here or on social media</p>
+					<h4>Follow me on</h4>
+					<ul>
+						<li class="linkedin"><i class="fa-brands fa-linkedin-in fa-lg"></i></li>
+						<li class="github"><i class="fa-brands fa-github fa-2x"></i></li>
+					</ul>
+				</div>
+				<form action="">
+					<div class="name">
+						<label for="name"></label>
+						<input type="text" id="name" name="name" placeholder="Full Name">
+						<i class="fa-regular fa-user"></i>
+					</div>
+					<div class="email">
+						<label for="email"></label>
+						<input type="text" id="email" name="email" placeholder="Email Address">
+						<i class="fa-regular fa-envelope"></i>
+					</div>
+					<label for="message"></label>
+					<textarea name="message" id="message" cols="30" rows="5" placeholder="Message"></textarea>
+					<button>Send Message</button>
+				</form>
+
+			</div>
 		</section>
 	</main>
 	<footer>

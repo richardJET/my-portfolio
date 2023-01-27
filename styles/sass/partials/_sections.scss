@@ -60,6 +60,7 @@ section{
     justify-content: space-between;
     background-color: #fff;
     margin-top: 25px;
+    filter: drop-shadow(2.3px 21.9px 39.5px rgba(99, 83, 165, 0.25));
 }
 
 .project-image{
@@ -112,6 +113,107 @@ section{
             color: $lightPurple;
         }
     }
+}
+
+.contact .wrapper{
+    display: flex;
+    justify-content: space-between;
+    ul{
+        display: flex;
+    }
+    li{
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    button{
+        background: linear-gradient(45deg, #f76f61 0%, #fd5195 100%);
+        color: white;
+        text-transform: uppercase;
+        border-radius: 30px;
+        padding: 15px 25px;
+        border: none;
+
+        &:hover,
+        &:focus{
+            filter: drop-shadow(-5.4px 25.4px 19px rgba(254, 81, 149, 0.3));
+        }
+    }
+}
+
+.linkedin{
+    background: linear-gradient(180deg, #7bc3ff 0%, #2175cb 100%);
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    &:hover,
+    &:focus{
+        filter: drop-shadow(0px 15px 9px rgba(5, 76, 207, 0.4));
+
+    }
+}
+.github{
+    color: black;
+    display: flex;
+    align-items: center;
+    .fa-github{
+        background-color: white;
+        border-radius: 50%;
+    }
+    &:hover,
+    &:focus{
+        filter: drop-shadow(0px 15px 9px rgba(0, 0, 0, 0.4));
+    }
+}
+
+.socials{
+    flex-basis: 35%;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 63%;
+    *:focus{
+        outline: none;
+    }
+    i{
+        position: absolute;
+        right: 30px;
+        top: 33%;
+        color: #887ba7;
+    }
+    .email,
+    textarea,
+    button{
+        margin-top: 15px;
+    }
+}
+
+
+
+.name,
+.email,
+textarea{
+    background-color: #fbfbff;
+    border: 1px solid rgba(98, 45, 207, 0.1);
+    border-radius: 30px;
+    line-height: 28px; 
+    width: 100%;    
+    position: relative;   
+}
+
+
+textarea{
+    padding: 20px;
+}
+
+input{
+    border: none;
+    background: none;
+    padding: 20px;
+    width: 100%;
 }
 
 
