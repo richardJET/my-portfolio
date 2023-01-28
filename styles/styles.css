@@ -533,7 +533,7 @@ section p {
   margin: 75px;
   color: lightgray;
 }
-.overlay a:hover, .overlay a:focus {
+.overlay a:hover, .overlay a:focus, .overlay a:active {
   color: #f7f4fd;
 }
 
@@ -562,7 +562,7 @@ section p {
   padding: 15px 25px;
   border: none;
 }
-.contact .wrapper button:hover, .contact .wrapper button:focus {
+.contact .wrapper button:hover, .contact .wrapper button:focus, .contact .wrapper button:active {
   -webkit-filter: drop-shadow(-5.4px 25.4px 19px rgba(254, 81, 149, 0.3));
           filter: drop-shadow(-5.4px 25.4px 19px rgba(254, 81, 149, 0.3));
 }
@@ -570,16 +570,18 @@ section p {
 .linkedin {
   background: -webkit-gradient(linear, left top, left bottom, from(#7bc3ff), to(#2175cb));
   background: linear-gradient(180deg, #7bc3ff 0%, #2175cb 100%);
-  color: white;
   border-radius: 50%;
   padding: 10px;
 }
-.linkedin:hover, .linkedin:focus {
+.linkedin:hover, .linkedin:focus, .linkedin:active {
   -webkit-filter: drop-shadow(0px 15px 9px rgba(5, 76, 207, 0.4));
           filter: drop-shadow(0px 15px 9px rgba(5, 76, 207, 0.4));
 }
+.linkedin a {
+  color: white;
+}
 
-.github {
+.github a {
   color: black;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -588,11 +590,11 @@ section p {
       -ms-flex-align: center;
           align-items: center;
 }
-.github .fa-github {
+.github a .fa-github {
   background-color: white;
   border-radius: 50%;
 }
-.github:hover, .github:focus {
+.github a:hover, .github a:focus, .github a:active {
   -webkit-filter: drop-shadow(0px 15px 9px rgba(0, 0, 0, 0.4));
           filter: drop-shadow(0px 15px 9px rgba(0, 0, 0, 0.4));
 }
@@ -656,4 +658,101 @@ input {
 footer {
   text-align: center;
   color: #5c4194;
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .wrapper {
+    width: 90%;
+  }
+  .skills li {
+    width: 205.317px;
+  }
+  .project {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .socials {
+    -ms-flex-preferred-size: 49%;
+        flex-basis: 49%;
+  }
+  .contact {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .wrapper {
+    width: 95%;
+  }
+  h2,
+h3 {
+    text-align: center;
+  }
+  header .wrapper div {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .header-image {
+    display: none;
+  }
+  .about .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-image {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .skills li {
+    width: 150px;
+    padding: 0 20px;
+  }
+  .skills li img {
+    height: 40px;
+  }
+  .skills li i {
+    font-size: 2rem;
+  }
+  .project {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mikasa .project-image {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .contact .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact .wrapper h4 {
+    display: none;
+  }
+  .contact .wrapper ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 0 50px 0;
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  footer {
+    font-size: 0.8rem;
+  }
 }
