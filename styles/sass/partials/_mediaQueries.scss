@@ -42,6 +42,18 @@
         order: -1;
     }
 
+    .skills li{
+        width: 150px;
+        padding: 0 20px;
+        img{
+            height: 40px;
+        }
+        i{
+            font-size: 2rem;
+        }
+
+    } 
+
     .project{
         flex-direction: column;
     }
@@ -69,9 +81,6 @@
     h1{
         font-size: 3rem;
         text-align: center;
-    }
-    h2{
-        font-size: 2.5rem;
     }
 
     footer{
