@@ -2,11 +2,12 @@
 
 html{
     font-family: $primaryFont;
-    color: $deepPurple;
+    color: $darkPurple;
     font-size: 125%;
 }
 
 h1{
+    font-family: $secondaryFont;
     color: white;
     font-weight: bold;
     font-size: 4.5rem;
@@ -20,12 +21,12 @@ h2{
 }
 
 h3{
-    font-weight: medium;
+    font-weight: 500;
     font-size: 1.8rem;
 }
 
 h4{
-    font-weight: medium;
+    font-weight: 500;
     margin: 0;
 }
 
@@ -37,10 +38,14 @@ a{
     }
 }
 
+p{
+    line-height: 30px;
+}
+
 span{
     color: $orange;
 }
 
 button{
-    font-weight: medium;
+    font-weight: 500;
 }

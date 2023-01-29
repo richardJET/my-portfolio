@@ -1,11 +1,9 @@
 @use './variables' as *;
 
 header{
-    background-size: cover;
-    
     background: url(./../assets/header-bg.png) no-repeat;
     background-size: cover;
-    width: 100%;
+    padding: 20px 0;
     .wrapper{
         display: flex;
         align-items: center;
@@ -32,7 +30,7 @@ header{
     position: absolute;
     left: calc(50% - 178.15px / 2);
     bottom: 12.5%;
-    color: #1D0C40;
+    color: $deepPurple;
     border: none;
     border-radius: 5px;
     box-shadow: 1.5px 14px 28.5px rgba(247, 6, 115, 0.35);

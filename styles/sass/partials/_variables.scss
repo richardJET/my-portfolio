@@ -1,15 +1,10 @@
-
 //colours
 $orange: #FF9600;
-$deepPurple: #3E276C;
-$darkPurple: #5A3E8E;
+$deepPurple: #1D0C40;
+$darkPurple: #3E276C;
 $purple: #684DA1;
 $lightPurple: #f7f4fd;
-$whitePurple: #f0e8ff;
 $fuchsia: #c74fbf;
-$peach: #ffcb6f;
-
-
 
 // fonts
 $primaryFont: 'Now', sans-serif;
@@ -17,52 +12,23 @@ $secondaryFont: 'Glacial Indifference', sans-serif;
 
 @font-face {
     font-family: 'Glacial Indifference';
-    src: url(./../assets/fonts/glacial-indifference/GlacialIndifference-Regular.otf);
-}
-
-@font-face {
-    font-family: 'Glacial Indifference';
-    src: url(./../assets/fonts/glacial-indifference/GlacialIndifference-Bold.otf);
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: 'Glacial Indifference';
-    src: url(./../assets/fonts/glacial-indifference/GlacialIndifference-Italic.otf);
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Now';
-    src: url(./../assets/fonts/glacial-indifference/Now-Black.otf);
-    font-weight: 900;
-}
-
-@font-face {
-    font-family: 'Now';
     src: url(./../assets/fonts/glacial-indifference/GlacialIndifference-Bold.otf);
     font-weight: bold;
 }
 
 @font-face {
     font-family: 'Now';
-    src: url(./../assets/fonts/Now-Light.otf);
-    font-weight: light;
+    src: url(./../assets/fonts/glacial-indifference/GlacialIndifference-Bold.otf);
+    font-weight: bold;
 }
 
 @font-face {
     font-family: 'Now';
     src: url(./../assets/fonts/Now-Medium.otf);
-    font-weight: medium;
+    font-weight: 500;
 }
 
 @font-face {
     font-family: 'Now';
     src: url(./../assets/fonts/Now-Regular.otf);
-}
-
-@font-face {
-    font-family: 'Now';
-    src: url(./../assets/fonts/Now-thin.otf);
-    font-weight: thin;
 }
