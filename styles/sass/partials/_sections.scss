@@ -2,9 +2,8 @@
 
 section{
     padding: 100px 0;
-    opacity: 0;
-    p {
-        line-height: 30px;
+    .wrapper{
+        opacity: 0;
     }
 }
 
@@ -13,9 +12,11 @@ section{
     justify-content: space-between;
     align-items: center;
 }
+
 .about-image{
     flex-basis: 48%;
 }
+
 .about-text{
     flex-basis: 50%;
 }
@@ -27,12 +28,15 @@ section{
         flex-wrap: wrap;
         justify-content: center;
     }
+
     p{
-        font-weight: medium;
+        font-weight: 500;
     }
+    
     li{
         padding: 0 50px;
     }
+
     img{
         height: 80px;
         object-fit: contain;
@@ -41,16 +45,21 @@ section{
 
 .projects{
     background-color: $lightPurple;
-    opacity: 1;
     .wrapper{
+        opacity: 1;
         display: flex;
         flex-direction: column;
         align-items: center;
-        opacity: 0;
     }
+
     h2{
         text-align: center;
         margin: 0;
+        opacity: 0;
+    }
+    
+    p {
+        color: #776E8A
     }
 }
 
@@ -61,38 +70,56 @@ section{
     border-radius: 10px;
     max-width: 1080px;
     justify-content: space-between;
-    background-color: #fff;
     margin-top: 25px;
     filter: drop-shadow(2.3px 21.9px 39.5px rgba(99, 83, 165, 0.25));
+    opacity: 0;
+    img {
+        border-radius: 10px;
+    }
+    
+    a{
+        margin: 75px;
+        color: lightgray;
+        i {
+            font-size: 0.1rem;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: $lightPurple;
+        }
+    }
+
+    ul {
+        display: flex;
+    }
+    
+    li {
+        padding: 0 20px 0 0;
+    }
 }
 
 .project-image{
     flex-basis: 53%;
     border-radius: 10px;
     position: relative;
-    img{
-        border-radius: 10px;
-    }
-
+    
     &:hover .overlay,
     &:focus-within .overlay{
         opacity: 1;
+        i {
+            font-size: 2.5rem;
+        }
     }
 }
 
 .project-description{
     flex-basis: 44%;
-    p{
-        color: #776E8A
-    }
-    ul{
-        display: flex;
-    }
-    li{
-        padding: 0 10px;
-    }
+
 }
-.guess-the-movie .project-image{
+
+.mikasa .project-description{
     order: -1;
 }
 
@@ -108,15 +135,6 @@ section{
     align-items: center;
     opacity: 0;
     border-radius: 10px;
-    a{
-        margin: 75px;
-        color: lightgray;
-        &:hover,
-        &:focus,
-        &:active{
-            color: $lightPurple;
-        }
-    }
 }
 
 .contact .wrapper{
@@ -125,10 +143,12 @@ section{
     ul{
         display: flex;
     }
+
     li{
         margin-right: 20px;
         cursor: pointer;
     }
+
     button{
         background: linear-gradient(45deg, #f76f61 0%, #fd5195 100%);
         color: white;
@@ -141,7 +161,7 @@ section{
         &:hover,
         &:focus,
         &:active{
-            filter: drop-shadow(-5.4px 25.4px 19px rgba(254, 81, 149, 0.3));
+            filter: drop-shadow(-2.8px 12.7px 9.5px rgba(254, 81, 149, 0.3));
         }
     }
 }
@@ -151,12 +171,14 @@ section{
     border-radius: 50%;
     padding: 10px;
     transition: filter .2s;
+    
     &:hover,
     &:focus,
     &:active{
-        filter: drop-shadow(0px 15px 9px rgba(5, 76, 207, 0.4));
+        filter: drop-shadow(0px 7.5px 4.5px rgba(5, 76, 207, 0.4));
         
     }
+
     a{
         color: white;
     }
@@ -170,10 +192,11 @@ section{
         background-color: white;
         border-radius: 50%;
     }
+    
     &:hover,
     &:focus,
     &:active{
-        filter: drop-shadow(0px 15px 9px rgba(0, 0, 0, 0.4));
+        filter: drop-shadow(0px 7.5px 4.5px rgba(0, 0, 0, 0.4));
     }
 }
 
@@ -190,12 +213,14 @@ form{
     *:focus{
         outline: none;
     }
+
     i{
         position: absolute;
         right: 30px;
         top: 33%;
         color: #887ba7;
     }
+    
     .email,
     textarea,
     button{
@@ -214,7 +239,6 @@ textarea{
     position: relative;   
 }
 
-
 textarea{
     padding: 20px;
 }
@@ -223,18 +247,33 @@ input{
     border: none;
     background: none;
     padding: 20px;
-    width: 100%;
 }
 
 .slide-up{
-    animation: slide-up .8s cubic-bezier(0, 1, 0.5, 1);;
+    animation: slide-up .8s cubic-bezier(0, 1, 0.5, 1);
+}
+
+.slide-up-projects{
+    animation: slide-up-projects .8s cubic-bezier(0, 1, 0.5, 1);
 }
 
 @keyframes slide-up {
     0%{
         transform: translateY(30%);
     }
+    
     100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-up-projects {
+    0% {
+        transform: translateY(200%);
+    }
+
+    100% {
         transform: translateY(0%);
         opacity: 1;
     }

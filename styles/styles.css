@@ -250,46 +250,22 @@ ul {
 
 @font-face {
   font-family: "Glacial Indifference";
-  src: url(./../assets/fonts/glacial-indifference/GlacialIndifference-Regular.otf);
-}
-@font-face {
-  font-family: "Glacial Indifference";
-  src: url(./../assets/fonts/glacial-indifference/GlacialIndifference-Bold.otf);
-  font-weight: bold;
-}
-@font-face {
-  font-family: "Glacial Indifference";
-  src: url(./../assets/fonts/glacial-indifference/GlacialIndifference-Italic.otf);
-  font-style: italic;
-}
-@font-face {
-  font-family: "Now";
-  src: url(./../assets/fonts/glacial-indifference/Now-Black.otf);
-  font-weight: 900;
-}
-@font-face {
-  font-family: "Now";
   src: url(./../assets/fonts/glacial-indifference/GlacialIndifference-Bold.otf);
   font-weight: bold;
 }
 @font-face {
   font-family: "Now";
-  src: url(./../assets/fonts/Now-Light.otf);
-  font-weight: light;
+  src: url(./../assets/fonts/glacial-indifference/GlacialIndifference-Bold.otf);
+  font-weight: bold;
 }
 @font-face {
   font-family: "Now";
   src: url(./../assets/fonts/Now-Medium.otf);
-  font-weight: medium;
+  font-weight: 500;
 }
 @font-face {
   font-family: "Now";
   src: url(./../assets/fonts/Now-Regular.otf);
-}
-@font-face {
-  font-family: "Now";
-  src: url(./../assets/fonts/Now-thin.otf);
-  font-weight: thin;
 }
 html {
   font-family: "Now", sans-serif;
@@ -298,6 +274,7 @@ html {
 }
 
 h1 {
+  font-family: "Glacial Indifference", sans-serif;
   color: white;
   font-weight: bold;
   font-size: 4.5rem;
@@ -311,12 +288,12 @@ h2 {
 }
 
 h3 {
-  font-weight: medium;
+  font-weight: 500;
   font-size: 1.8rem;
 }
 
 h4 {
-  font-weight: medium;
+  font-weight: 500;
   margin: 0;
 }
 
@@ -328,19 +305,22 @@ a:hover {
   color: #FF9600;
 }
 
+p {
+  line-height: 30px;
+}
+
 span {
   color: #FF9600;
 }
 
 button {
-  font-weight: medium;
+  font-weight: 500;
 }
 
 header {
-  background-size: cover;
   background: url(./../assets/header-bg.png) no-repeat;
   background-size: cover;
-  width: 100%;
+  padding: 20px 0;
 }
 header .wrapper {
   display: -webkit-box;
@@ -390,10 +370,9 @@ header h3 {
 
 section {
   padding: 100px 0;
-  opacity: 0;
 }
-section p {
-  line-height: 30px;
+section .wrapper {
+  opacity: 0;
 }
 
 .about .wrapper {
@@ -432,7 +411,7 @@ section p {
           justify-content: center;
 }
 .skills p {
-  font-weight: medium;
+  font-weight: 500;
 }
 .skills li {
   padding: 0 50px;
@@ -445,9 +424,9 @@ section p {
 
 .projects {
   background-color: #f7f4fd;
-  opacity: 1;
 }
 .projects .wrapper {
+  opacity: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -458,11 +437,14 @@ section p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  opacity: 0;
 }
 .projects h2 {
   text-align: center;
   margin: 0;
+  opacity: 0;
+}
+.projects p {
+  color: #776E8A;
 }
 
 .project {
@@ -476,10 +458,31 @@ section p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #fff;
   margin-top: 25px;
   -webkit-filter: drop-shadow(2.3px 21.9px 39.5px rgba(99, 83, 165, 0.25));
           filter: drop-shadow(2.3px 21.9px 39.5px rgba(99, 83, 165, 0.25));
+  opacity: 0;
+}
+.project img {
+  border-radius: 10px;
+}
+.project a {
+  margin: 75px;
+  color: lightgray;
+}
+.project a i {
+  font-size: 0.1rem;
+}
+.project a:hover, .project a:focus, .project a:active {
+  color: #f7f4fd;
+}
+.project ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.project li {
+  padding: 0 20px 0 0;
 }
 
 .project-image {
@@ -488,30 +491,19 @@ section p {
   border-radius: 10px;
   position: relative;
 }
-.project-image img {
-  border-radius: 10px;
-}
 .project-image:hover .overlay, .project-image:focus-within .overlay {
   opacity: 1;
+}
+.project-image:hover .overlay i, .project-image:focus-within .overlay i {
+  font-size: 2.5rem;
 }
 
 .project-description {
   -ms-flex-preferred-size: 44%;
       flex-basis: 44%;
 }
-.project-description p {
-  color: #776E8A;
-}
-.project-description ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.project-description li {
-  padding: 0 10px;
-}
 
-.guess-the-movie .project-image {
+.mikasa .project-description {
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
           order: -1;
@@ -535,13 +527,6 @@ section p {
           align-items: center;
   opacity: 0;
   border-radius: 10px;
-}
-.overlay a {
-  margin: 75px;
-  color: lightgray;
-}
-.overlay a:hover, .overlay a:focus, .overlay a:active {
-  color: #f7f4fd;
 }
 
 .contact .wrapper {
@@ -574,8 +559,8 @@ section p {
   transition: filter 0.2s, -webkit-filter 0.2s;
 }
 .contact .wrapper button:hover, .contact .wrapper button:focus, .contact .wrapper button:active {
-  -webkit-filter: drop-shadow(-5.4px 25.4px 19px rgba(254, 81, 149, 0.3));
-          filter: drop-shadow(-5.4px 25.4px 19px rgba(254, 81, 149, 0.3));
+  -webkit-filter: drop-shadow(-2.8px 12.7px 9.5px rgba(254, 81, 149, 0.3));
+          filter: drop-shadow(-2.8px 12.7px 9.5px rgba(254, 81, 149, 0.3));
 }
 
 .linkedin {
@@ -589,8 +574,8 @@ section p {
   transition: filter 0.2s, -webkit-filter 0.2s;
 }
 .linkedin:hover, .linkedin:focus, .linkedin:active {
-  -webkit-filter: drop-shadow(0px 15px 9px rgba(5, 76, 207, 0.4));
-          filter: drop-shadow(0px 15px 9px rgba(5, 76, 207, 0.4));
+  -webkit-filter: drop-shadow(0px 7.5px 4.5px rgba(5, 76, 207, 0.4));
+          filter: drop-shadow(0px 7.5px 4.5px rgba(5, 76, 207, 0.4));
 }
 .linkedin a {
   color: white;
@@ -614,8 +599,8 @@ section p {
   border-radius: 50%;
 }
 .github a:hover, .github a:focus, .github a:active {
-  -webkit-filter: drop-shadow(0px 15px 9px rgba(0, 0, 0, 0.4));
-          filter: drop-shadow(0px 15px 9px rgba(0, 0, 0, 0.4));
+  -webkit-filter: drop-shadow(0px 7.5px 4.5px rgba(0, 0, 0, 0.4));
+          filter: drop-shadow(0px 7.5px 4.5px rgba(0, 0, 0, 0.4));
 }
 
 .socials {
@@ -671,12 +656,16 @@ input {
   border: none;
   background: none;
   padding: 20px;
-  width: 100%;
 }
 
 .slide-up {
   -webkit-animation: slide-up 0.8s cubic-bezier(0, 1, 0.5, 1);
           animation: slide-up 0.8s cubic-bezier(0, 1, 0.5, 1);
+}
+
+.slide-up-projects {
+  -webkit-animation: slide-up-projects 0.8s cubic-bezier(0, 1, 0.5, 1);
+          animation: slide-up-projects 0.8s cubic-bezier(0, 1, 0.5, 1);
 }
 
 @-webkit-keyframes slide-up {
@@ -695,6 +684,28 @@ input {
   0% {
     -webkit-transform: translateY(30%);
             transform: translateY(30%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slide-up-projects {
+  0% {
+    -webkit-transform: translateY(200%);
+            transform: translateY(200%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@keyframes slide-up-projects {
+  0% {
+    -webkit-transform: translateY(200%);
+            transform: translateY(200%);
   }
   100% {
     -webkit-transform: translateY(0%);
@@ -724,9 +735,9 @@ footer {
     -ms-flex-preferred-size: 49%;
         flex-basis: 49%;
   }
-  .contact {
-    -ms-flex-preferred-size: 48%;
-        flex-basis: 48%;
+  form {
+    -ms-flex-preferred-size: 49%;
+        flex-basis: 49%;
   }
 }
 /* Landscape phone to portrait tablet */
@@ -734,7 +745,8 @@ footer {
   .wrapper {
     width: 95%;
   }
-  h2,
+  h1,
+h2,
 h3 {
     text-align: center;
   }
@@ -764,7 +776,7 @@ h3 {
     height: 40px;
   }
   .skills li i {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
   .project {
     -webkit-box-orient: vertical;
@@ -792,6 +804,10 @@ h3 {
             justify-content: center;
     margin: 0 0 50px 0;
   }
+  html,
+.project-description p {
+    color: #1D0C40;
+  }
 }
 /* Landscape phones and down */
 @media (max-width: 480px) {
@@ -800,7 +816,7 @@ h3 {
     text-align: center;
   }
   section {
-    padding: 80px 0;
+    padding: 75px 0;
   }
   footer {
     font-size: 0.8rem;
