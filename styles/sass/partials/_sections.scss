@@ -2,6 +2,7 @@
 
 section{
     padding: 100px 0;
+    opacity: 0;
     p {
         line-height: 30px;
     }
@@ -40,10 +41,12 @@ section{
 
 .projects{
     background-color: $lightPurple;
+    opacity: 1;
     .wrapper{
         display: flex;
         flex-direction: column;
         align-items: center;
+        opacity: 0;
     }
     h2{
         text-align: center;
@@ -133,6 +136,7 @@ section{
         border-radius: 30px;
         padding: 15px 25px;
         border: none;
+        transition: filter .2s;
 
         &:hover,
         &:focus,
@@ -146,6 +150,7 @@ section{
     background: linear-gradient(180deg, #7bc3ff 0%, #2175cb 100%);
     border-radius: 50%;
     padding: 10px;
+    transition: filter .2s;
     &:hover,
     &:focus,
     &:active{
@@ -160,6 +165,7 @@ section{
     color: black;
     display: flex;
     align-items: center;
+    transition: filter .2s;
     .fa-github{
         background-color: white;
         border-radius: 50%;
@@ -220,4 +226,16 @@ input{
     width: 100%;
 }
 
+.slide-up{
+    animation: slide-up .8s cubic-bezier(0, 1, 0.5, 1);;
+}
 
+@keyframes slide-up {
+    0%{
+        transform: translateY(30%);
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
