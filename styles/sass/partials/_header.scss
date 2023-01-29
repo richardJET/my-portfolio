@@ -36,6 +36,9 @@ header{
     border: none;
     border-radius: 5px;
     box-shadow: 1.5px 14px 28.5px rgba(247, 6, 115, 0.35);
+    i{
+        transition: color .1s ease-in;
+    }
     &:hover i,
     &:focus i{
         color: #625a72;

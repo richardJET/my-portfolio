@@ -380,12 +380,17 @@ header h3 {
   -webkit-box-shadow: 1.5px 14px 28.5px rgba(247, 6, 115, 0.35);
           box-shadow: 1.5px 14px 28.5px rgba(247, 6, 115, 0.35);
 }
+.resume i {
+  -webkit-transition: color 0.1s ease-in;
+  transition: color 0.1s ease-in;
+}
 .resume:hover i, .resume:focus i {
   color: #625a72;
 }
 
 section {
   padding: 100px 0;
+  opacity: 0;
 }
 section p {
   line-height: 30px;
@@ -440,6 +445,7 @@ section p {
 
 .projects {
   background-color: #f7f4fd;
+  opacity: 1;
 }
 .projects .wrapper {
   display: -webkit-box;
@@ -452,6 +458,7 @@ section p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  opacity: 0;
 }
 .projects h2 {
   text-align: center;
@@ -561,6 +568,10 @@ section p {
   border-radius: 30px;
   padding: 15px 25px;
   border: none;
+  -webkit-transition: -webkit-filter 0.2s;
+  transition: -webkit-filter 0.2s;
+  transition: filter 0.2s;
+  transition: filter 0.2s, -webkit-filter 0.2s;
 }
 .contact .wrapper button:hover, .contact .wrapper button:focus, .contact .wrapper button:active {
   -webkit-filter: drop-shadow(-5.4px 25.4px 19px rgba(254, 81, 149, 0.3));
@@ -572,6 +583,10 @@ section p {
   background: linear-gradient(180deg, #7bc3ff 0%, #2175cb 100%);
   border-radius: 50%;
   padding: 10px;
+  -webkit-transition: -webkit-filter 0.2s;
+  transition: -webkit-filter 0.2s;
+  transition: filter 0.2s;
+  transition: filter 0.2s, -webkit-filter 0.2s;
 }
 .linkedin:hover, .linkedin:focus, .linkedin:active {
   -webkit-filter: drop-shadow(0px 15px 9px rgba(5, 76, 207, 0.4));
@@ -589,6 +604,10 @@ section p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: -webkit-filter 0.2s;
+  transition: -webkit-filter 0.2s;
+  transition: filter 0.2s;
+  transition: filter 0.2s, -webkit-filter 0.2s;
 }
 .github a .fa-github {
   background-color: white;
@@ -655,6 +674,34 @@ input {
   width: 100%;
 }
 
+.slide-up {
+  -webkit-animation: slide-up 0.8s cubic-bezier(0, 1, 0.5, 1);
+          animation: slide-up 0.8s cubic-bezier(0, 1, 0.5, 1);
+}
+
+@-webkit-keyframes slide-up {
+  0% {
+    -webkit-transform: translateY(30%);
+            transform: translateY(30%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    -webkit-transform: translateY(30%);
+            transform: translateY(30%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+}
 footer {
   text-align: center;
   color: #5c4194;
@@ -751,6 +798,9 @@ h3 {
   h1 {
     font-size: 3rem;
     text-align: center;
+  }
+  section {
+    padding: 80px 0;
   }
   footer {
     font-size: 0.8rem;
