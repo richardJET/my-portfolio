@@ -503,7 +503,12 @@ section .wrapper {
       flex-basis: 44%;
 }
 
-.mikasa .project-description {
+.firebase-small {
+  height: 40px;
+}
+
+.mikasa .project-description,
+.podcast-planner .project-description {
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
           order: -1;
@@ -746,8 +751,8 @@ footer {
     width: 95%;
   }
   h1,
-h2,
-h3 {
+  h2,
+  h3 {
     text-align: center;
   }
   header .wrapper div {
@@ -805,7 +810,7 @@ h3 {
     margin: 0 0 50px 0;
   }
   html,
-.project-description p {
+  .project-description p {
     color: #1D0C40;
   }
 }

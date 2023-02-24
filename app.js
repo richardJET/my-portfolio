@@ -28,6 +28,8 @@ sections.forEach(section => {
     } else{
         observer.observe(section.children[1]);
         observer.observe(section.children[2]);
+        observer.observe(section.children[3]);
+        observer.observe(section.children[4]);
     }
 })
 
