@@ -788,7 +788,8 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .mikasa .project-image {
+  .mikasa .project-image,
+  .podcast-planner .project-image {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
