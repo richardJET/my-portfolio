@@ -359,13 +359,12 @@ header h3 {
   border-radius: 5px;
   -webkit-box-shadow: 1.5px 14px 28.5px rgba(247, 6, 115, 0.35);
           box-shadow: 1.5px 14px 28.5px rgba(247, 6, 115, 0.35);
-}
-.resume i {
   -webkit-transition: color 0.1s ease-in;
   transition: color 0.1s ease-in;
 }
-.resume:hover i, .resume:focus i {
+.resume:hover, .resume:focus {
   color: #625a72;
+  cursor: pointer;
 }
 
 section {
