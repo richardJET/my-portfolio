@@ -479,9 +479,11 @@ section .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .project li {
-  padding: 0 20px 0 0;
+  padding: 0 15px 0 0;
 }
 
 .project-image {
@@ -502,12 +504,13 @@ section .wrapper {
       flex-basis: 44%;
 }
 
-.firebase-small {
+.icon-small {
   height: 40px;
 }
 
 .mikasa .project-description,
-.podcast-planner .project-description {
+.podcast-planner .project-description,
+.b4v .project-description {
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
           order: -1;
@@ -788,8 +791,7 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .mikasa .project-image,
-  .podcast-planner .project-image {
+  .project-image {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;

@@ -91,12 +91,13 @@ section{
         }
     }
 
-    ul {
+    ul{
         display: flex;
+        flex-wrap: wrap;
     }
     
     li {
-        padding: 0 20px 0 0;
+        padding: 0 15px 0 0;
     }
 }
 
@@ -119,12 +120,13 @@ section{
 
 }
 
-.firebase-small{
+.icon-small{
     height: 40px;
 }
 
 .mikasa .project-description,
-.podcast-planner .project-description{
+.podcast-planner .project-description,
+.b4v .project-description{
     order: -1;
 }
 
