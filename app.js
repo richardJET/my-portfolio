@@ -30,6 +30,7 @@ sections.forEach(section => {
         observer.observe(section.children[2]);
         observer.observe(section.children[3]);
         observer.observe(section.children[4]);
+        observer.observe(section.children[5]);
     }
 })
 
